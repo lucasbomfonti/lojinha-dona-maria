@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  database:
+    image: "mcr.microsoft.com/mssql/server"
+    container_name: database
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Lojinha123
+    ports:
+      - 1433:1433
+    volumes:
+      - C:/db:/var/opt/mssql
+
+  lojinha.donamaria:
+    image: lojinhadonamaria
+    build:
+      context: .
+      dockerfile: Lojinha.DonaMaria/Dockerfile
+    ports:
+      - 8081:80

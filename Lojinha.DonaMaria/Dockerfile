@@ -5,14 +5,14 @@ EXPOSE 44397
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-COPY ["Lojinha.DonaMaria/Lojinha.DonaMaria.csproj", "Lojinha.DonaMaria/"]
-RUN dotnet restore "Lojinha.DonaMaria/Lojinha.DonaMaria.csproj"
+COPY Lojinha.DonaMaria/Lojinha.DonaMaria.csproj Lojinha.DonaMaria/
+RUN dotnet restore Lojinha.DonaMaria/Lojinha.DonaMaria.csproj
 COPY . .
-WORKDIR "/src/Lojinha.DonaMaria"
-RUN dotnet build "Lojinha.DonaMaria.csproj" -c Release -o /app
+WORKDIR /src/Lojinha.DonaMaria
+RUN dotnet build Lojinha.DonaMaria.csproj -c Release -o /app
 
 FROM build AS publish
-RUN dotnet publish "Lojinha.DonaMaria.csproj" -c Release -o /app
+RUN dotnet publish Lojinha.DonaMaria.csproj -c Release -o /app
 
 FROM base AS final
 WORKDIR /app

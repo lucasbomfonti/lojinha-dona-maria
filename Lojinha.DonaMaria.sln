@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lojinha.DonaMaria", "Lojinha.DonaMaria\Lojinha.DonaMaria.csproj", "{9085DA78-2CCA-41E2-9CC6-44075FD08233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lojinha.DonaMaria", "Lojinha.DonaMaria\Lojinha.DonaMaria.csproj", "{9085DA78-2CCA-41E2-9CC6-44075FD08233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lojinha.DonaMaria.Test", "Lojinha.DonaMaria.Test\Lojinha.DonaMaria.Test.csproj", "{0C8AF644-E359-4142-915C-39FBB9D554CD}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FD4928A7-E738-415B-AB83-530287A6A2A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{9085DA78-2CCA-41E2-9CC6-44075FD08233}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9085DA78-2CCA-41E2-9CC6-44075FD08233}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9085DA78-2CCA-41E2-9CC6-44075FD08233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8AF644-E359-4142-915C-39FBB9D554CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8AF644-E359-4142-915C-39FBB9D554CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8AF644-E359-4142-915C-39FBB9D554CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8AF644-E359-4142-915C-39FBB9D554CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4928A7-E738-415B-AB83-530287A6A2A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4928A7-E738-415B-AB83-530287A6A2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4928A7-E738-415B-AB83-530287A6A2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4928A7-E738-415B-AB83-530287A6A2A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
